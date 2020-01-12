@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+
+    <link rel="stylesheet" href="resources/css/reset.css">
+    <link rel="stylesheet" href="resources/css/font.css">
+    <link rel="stylesheet" href="resources/css/common.css">
+    <link rel="stylesheet" href="resources/css/mrc.css">
+
+    <title>MRC</title>
+</head>
+<body>
+    <!-- #wrap -->
+    <div id="wrap">
+        <!-- #header -->
+        <div id="header" class="clearfix">
+          <div class="sta">
+            <h1>
+                <a href="index.html">
+                    <img src="resources/images/img_logo.png" alt="로고">
+                    <span>MAUM DATA</span>
+                </a>
+            </h1>
+
+            <!-- .gnb -->
+            <div class="gnb">
+                <p>WORK SPACE</p>
+
+                <div class="my_account">
+                    <a href="#none">
+                      <span class="fas fa-user"></span>dataeditor@gmail.com
+                    </a>
+                </div>
+
+                <div class="sign">
+                    <a href="#none">
+                      Sign out<span class="fas fa-sign-out-alt"></span>
+                    </a>
+                </div>
+            </div>
+            <!-- //.gnb -->
+          </div>
+          <!-- //.sta -->          
+        </div>
+        <!-- //#header -->
+
+        <!-- #container -->
+        <div id="container" class="clearfix">
+            <!-- #snb -->
+            <ul id="snb">
+                <li><a href="#none"><span class="fas fa-home">Home</span></a></li>
+                <li><a href="#none"><span class="fas fa-file-alt">Text</span></a></li>
+                <li class="active"><a href="#none"><span class="fas fa-file-image">Image</span></a></li>
+                <li><a href="#none"><span class="fas fa-file-audio">Voice</span></a></li>
+            </ul>
+            <!-- //#snb -->
+            
+            <!-- #contents -->
+            <div id="contents">
+                <h2>최신신문기사와 음성 읽고 의미 파악&lowbar;AI</h2>
+                
+                <!-- .cont_box -->
+                <div class="cont_box clearfix">
+                    <!-- .cont_txt -->
+                    <div class="learning_txt clearfix">
+                        <h3>학습시킬 본문</h3>
+                        <textarea class="learning_cont"></textarea>
+                    </div>
+                    <!-- //.cont_txt -->
+                    
+                    <div class="question_txt">
+                        <!-- .question -->
+                        <div class="question">
+                            <h3>1. 질문을 만들어 주세요.</h3>
+                            
+                            <!-- .make_question -->
+                            <div class="make_question">
+                                <ul class="question_lst">
+                                    <li>
+                                        <div>
+                                            <a href="#none">누가 마인즈랩과 함께 일했지?</a>
+                                            <button class="edit"><span class="fas fa-pen"></span></button>
+                                            <button class="delete"><span class="far fa-window-close"></span></button></button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <a href="#none">누가 마인즈랩과 함께 일했지?</a>
+                                            <button class="edit"><span class="fas fa-pen"></span></button>
+                                            <button class="delete"><span class="far fa-window-close"></span></button></button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <a href="#none">누가 마인즈랩과 함께 일했지?</a>
+                                            <button class="edit"><span class="fas fa-pen"></span></button>
+                                            <button class="delete"><span class="far fa-window-close"></span></button></button>
+                                        </div>
+                                    </li>
+                                    <!-- <li>
+                                        <div>
+                                            <a href="#none">누가 마인즈랩과 함께 일했지?</a>
+                                            <button class="edit"><span class="fas fa-pen"></span></button>
+                                            <button class="delete"><span class="far fa-window-close"></span></button></button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <a href="#none">누가 마인즈랩과 함께 일했지?</a>
+                                            <button class="edit"><span class="fas fa-pen"></span></button>
+                                            <button class="delete"><span class="far fa-window-close"></span></button></button>
+                                        </div>
+                                    </li> -->
+                                </ul>
+                                
+                                <div class="btn_box">
+                                    <button type="button" class="question_add_btn"><span class="fas fa-plus"></span>질문 추가하기</button>
+                                </div>
+                            </div>
+                            <!-- //.make_question -->
+                        </div>
+                        <!-- //.question -->
+                        
+                        <!-- .answer -->
+                        <div class="answer">
+                            <h3>2. 본문에서 답변의 범위를 마우스 드래그로 지정해주세요.</h3>
+                            
+                            <!-- .user_make .user_answer -->
+                            <div class="user_make user_answer">
+                                
+                            </div>
+                            <!-- //.user_make .user_answer -->                       
+                        </div>
+                        <!-- //.answer -->
+                        
+                        <!-- .reason -->
+                        <div class="reason clearfix">
+                            <h3>3. 아래 박스를 선택 후, 본문에서 답변의 이유를 마우스 드래그로 지정해주세요.</h3>
+                            
+                            <!-- .user_make .user_reason -->
+                            <div class="user_make user_reason">
+                                
+                            </div>
+                            <!-- //.user_make .user_reason -->
+                        </div>
+                        <!-- //.reason -->
+                    </div>
+                    <!-- //.question_txt -->
+                    
+                    <!-- .work_btn -->
+                    <div class="work_btn">
+                        <button type="button" class="giveup_btn">
+                            <span class="fas fa-sad-cry">작업 포기</span>
+                        </button>
+                        
+                        <button type="button" class="disable_btn">
+                            <span class="fas fa-times">작업 불가</span>
+                        </button>
+                        
+                        <button type="button" class="save_next_btn">
+                            <span class="fas fa-save">저장 &amp; </span>
+                            다음파일<span class="fas fa-angle-right"></span>
+                        </button>
+                        
+                        <button type="button" class="temporary_save_btn">
+                            <span class="fas fa-save">임시저장</span>
+                        </button>
+                    </div>
+                    <!-- //.work_btn -->
+                </div>
+                <!-- //.cont_box -->
+            </div>
+            <!-- //#contents -->
+        </div>
+        <!-- //#container -->
+
+        <!-- #footer -->
+        <div id="footer">
+
+        </div>
+        <!-- //#footer -->
+    </div>
+    <!-- //#wrap -->
+</body>
+</html>
