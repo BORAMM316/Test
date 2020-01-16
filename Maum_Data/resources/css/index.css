@@ -13,9 +13,12 @@
 #contents .work_space_pink .cost {color: #f5508b;}
 
 #contents .work_space_blue .cont_box {overflow: hidden; width: 100%; height: 560px;}
-#contents .work_space_blue h2 span, #contents .work_space_blue .now_bar {background: #5e77ff;}
+#contents .work_space_blue h2 span, 
+#contents .work_space_blue .now_bar {background: #5e77ff;}
+#contents .work_space_blue .cont_lst:nth-child(5){margin: 27px 0 0 0; }
+#contents .work_space_blue .cont_lst .progress_bar .now_bar {width: 35%;}
 #contents .work_space_blue .cont_lst .progress_bar .now_per {border-color: #5e77ff;}
 #contents .work_space_blue .cont_lst .progress_bar .now_per:before {border-top-color: #5e77ff;}
 #contents .work_space_blue .cost {color: #5e77ff;}
 
-#contents  .chevron_btn {margin: 17px 0 0 9px;}
+#contents  .chevron_btn {margin: 17px 0 0 -9px;}
