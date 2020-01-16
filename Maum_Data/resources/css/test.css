@@ -1,0 +1,7 @@
+.table {overflow: auto; width: 440px; height: 550px; border: 1px solid gray; border-radius: 5px;}
+table { width: 100%;}
+td {font-size: 14px; padding: 8px 0px;}
+
+.text_hide {font-size: 0px; line-height: 0px; text-indent: -9999px;}
+.hide {position: absolute; left: -9999px; display: none; border: 1px solid red;
+visibility: visible;}
