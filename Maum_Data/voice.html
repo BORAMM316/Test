@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="resources/css/reset.css">
     <link rel="stylesheet" href="resources/css/font.css">
     <link rel="stylesheet" href="resources/css/common.css">
-    <link rel="stylesheet" href="resources/css/xdc.css">
+    <link rel="stylesheet" href="resources/css/common_sub.css">
+    <link rel="stylesheet" href="resources/css/voice.css">
 
     <title>VOICE</title>
 </head>
@@ -62,7 +63,151 @@
             
             <!-- #contents -->
             <div id="contents">
+                <h2>최신신문기사와 음성 읽고 의미 파악&lowbar;AI</h2>
                 
+                <!-- .cont_box -->
+                <div class="cont_box">
+                    
+                    <div class="clearfix">
+                        <!-- .sound_box -->
+                        <div class="sound_box">
+                            <!-- speech_box -->
+                            <div class="speech_box">
+                                <!-- [D] tts data 삽입 -->
+                            </div>
+                            <!-- //.speech_box -->
+                            
+                            <div class="play_btn_box">
+                                <button type="button" class="left_btn reset_btn">
+                                    <span class="fas fa-sync-alt"></span>
+                                    <em>Reset</em>
+                                </button>
+                                
+                                <button type="button" class="left_btn undo_btn hidden">
+                                    <span class="fas fa-reply"></span>
+                                    <em>Undo</em>
+                                </button>
+                                
+                                <button type="button" class="btn stop_btn">
+                                    <img src="resources/images/img_stop_btn.png" alt="플레이버튼이미지">
+                                </button>
+                                
+                                <button type="button" class="right_btn redo_btn">
+                                    <span class="fas fa-share"></span>
+                                    <em>Redo</em>
+                                </button>
+                                
+                                <button type="button" class="right_btn cut_btn hidden">
+                                    <span class="fas fa-cut"></span>
+                                    <em>Cut</em>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- //.sound_box -->
+                        
+                        <!-- .script_box -->
+                        <div class="script_box">
+                            <h3>Script</h3>
+                            
+                            <!-- .script_lst -->
+                            <ul class="script_lst">
+                                
+                            </ul>
+                            <!-- //.script_lst -->
+                        </div>
+                        <!-- //.script_box -->
+                        
+                        <!-- .result_box -->
+                        <div class="result_box">
+                            <h3>Results</h3>
+                            
+                            <!-- .result_lst -->
+                            <ul class="result_lst">
+                                <li>
+                                    <ul class="lst_header">
+                                        <li>No.</li>
+                                        <li>Play</li>
+                                        <li>Start</li>
+                                        <li>End</li>
+                                        <li>Del</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="lst_body">
+                                        <li class="lst_num">1</li>
+                                        <li>
+                                            <button type="button" class="play_btn">
+                                                <img src="resources/images/img_play_btn.png" alt="플레이버튼이미지">
+                                            </button>
+                                        </li>
+                                        <li>12:23.222</li>
+                                        <li>12:23.222</li>
+                                        <li><button class="delete"><span class="far fa-window-close"></span></button></button></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="lst_body">
+                                        <li class="lst_num">1</li>
+                                        <li>
+                                            <button type="button" class="play_btn">
+                                                <img src="resources/images/img_play_btn.png" alt="플레이버튼이미지">
+                                            </button>
+                                        </li>
+                                        <li>12:23.222</li>
+                                        <li>12:23.222</li>
+                                        <li><button class="delete"><span class="far fa-window-close"></span></button></button></li>
+                                    </ul>
+                                </li><li>
+                                    <ul class="lst_body">
+                                        <li class="lst_num">1</li>
+                                        <li>
+                                            <button type="button" class="play_btn">
+                                                <img src="resources/images/img_play_btn.png" alt="플레이버튼이미지">
+                                            </button>
+                                        </li>
+                                        <li>12:23.222</li>
+                                        <li>12:23.222</li>
+                                        <li><button class="delete"><span class="far fa-window-close"></span></button></button></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <!-- //.result_lst -->
+                        </div>
+                        <!-- //.result_box -->
+                    </div>
+                    
+                    <!-- .work_btn -->
+                    <div class="work_btn">
+                        <button type="button" class="giveup_btn">
+                            <span class="fas fa-sad-cry">작업 포기</span>
+                        </button>
+                        
+                        <button type="button" class="disable_btn">
+                            <span class="fas fa-times">작업 불가</span>
+                        </button>
+                        
+                        <button type="button" class="save_next_btn">
+                            <span class="fas fa-save">저장 &amp; </span>
+                            다음파일<span class="fas fa-angle-right"></span>
+                        </button>
+                        
+                        <button type="button" class="temporary_save_btn">
+                            <span class="fas fa-save">임시저장</span>
+                        </button>
+                    </div>
+                    <!-- //.work_btn -->
+                    
+                    <!-- .reject_notice -->
+                    <div class="reject_notice">
+                        <h3>Reasons for reject</h3>
+                        
+                        <div class="txt">
+                            자산이 증가하였을때 AI가 해줬으면 하는 대화를 작성하는 프로젝트 입니다. 자산이 증가하였을때 AI가 해줬으면 하는 대화를 작성하는 프로젝트 입니다. AI가 해줬으면 하는 대화를 작성하는 프로젝트 입니다. 자산이 증가하였을때 AI가 해줬으면 하는 대화를 작성하는 프로젝트 입니다.
+                        </div>
+                    </div>
+                    <!-- //.reject_notice -->
+                </div>
+                <!-- //.cont_box -->
             </div>
             <!-- //#contents -->
         </div>

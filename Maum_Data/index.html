@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="resources/css/font.css">
     <link rel="stylesheet" href="resources/css/common.css">
     <link rel="stylesheet" href="resources/css/index.css">
+    
+    <script type="text/javascript" src="resources/script/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="resources/script/common.js"></script>    
 
     <title>MAUM DATA</title>
 </head>
@@ -262,8 +265,8 @@
                       <li class="cont_lst">
                           <a href="#none">
                             <div class="progress_bar">
-                                <div class="now_bar" style="width: 0">
-                                    <span class="now_per">0&percnt;</span>
+                                <div class="now_bar" style="width: 35%">
+                                    <span class="now_per">35&percnt;</span>
                                 </div>
                             </div>
                             <h3><span class="fas fa-file-alt"></span>TTS</h3>
@@ -313,7 +316,7 @@
                             <a href="#none">
                               <div class="progress_bar">
                                   <div class="now_bar">
-                                      <span class="now_per">0&percnt;</span>
+                                      <span class="now_per">35&percnt;</span>
                                   </div>
                               </div>
                               <h3><span class="fas fa-file-alt"></span>TTS</h3>
@@ -338,7 +341,7 @@
                              <a href="#none">
                                <div class="progress_bar">
                                    <div class="now_bar">
-                                       <span class="now_per">0&percnt;</span>
+                                       <span class="now_per">35&percnt;</span>
                                    </div>
                                </div>
                                <h3><span class="fas fa-file-alt"></span>TTS</h3>
@@ -363,7 +366,7 @@
                               <a href="#none">
                                 <div class="progress_bar">
                                     <div class="now_bar">
-                                        <span class="now_per">0&percnt;</span>
+                                        <span class="now_per">35&percnt;</span>
                                     </div>
                                 </div>
                                 <h3><span class="fas fa-file-alt"></span>TTS</h3>
@@ -388,7 +391,7 @@
                                <a href="#none">
                                  <div class="progress_bar">
                                      <div class="now_bar">
-                                         <span class="now_per">0&percnt;</span>
+                                         <span class="now_per">35&percnt;</span>
                                      </div>
                                  </div>
                                  <h3><span class="fas fa-file-alt"></span>TTS</h3>
@@ -413,7 +416,7 @@
                                 <a href="#none">
                                   <div class="progress_bar">
                                       <div class="now_bar">
-                                          <span class="now_per">0&percnt;</span>
+                                          <span class="now_per">35&percnt;</span>
                                       </div>
                                   </div>
                                   <h3><span class="fas fa-file-alt"></span>TTS</h3>
@@ -438,7 +441,7 @@
                                  <a href="#none">
                                    <div class="progress_bar">
                                        <div class="now_bar">
-                                           <span class="now_per">0&percnt;</span>
+                                           <span class="now_per">35&percnt;</span>
                                        </div>
                                    </div>
                                    <h3><span class="fas fa-file-alt"></span>TTS</h3>
@@ -463,7 +466,7 @@
                                   <a href="#none">
                                     <div class="progress_bar">
                                         <div class="now_bar">
-                                            <span class="now_per">0&percnt;</span>
+                                            <span class="now_per">35&percnt;</span>
                                         </div>
                                     </div>
                                     <h3><span class="fas fa-file-alt"></span>TTS</h3>
@@ -488,7 +491,7 @@
                                    <a href="#none">
                                      <div class="progress_bar">
                                          <div class="now_bar">
-                                             <span class="now_per">0&percnt;</span>
+                                             <span class="now_per">35&percnt;</span>
                                          </div>
                                      </div>
                                      <h3><span class="fas fa-file-alt"></span>TTS</h3>
@@ -513,7 +516,7 @@
                                     <a href="#none">
                                       <div class="progress_bar">
                                           <div class="now_bar">
-                                              <span class="now_per">0&percnt;</span>
+                                              <span class="now_per">35&percnt;</span>
                                           </div>
                                       </div>
                                       <h3><span class="fas fa-file-alt"></span>TTS</h3>
@@ -546,11 +549,54 @@
         </div>
         <!-- //#container -->
 
-        <!-- #footer -->
-        <div id="footer">
-
-        </div>
-        <!-- //#footer -->
+        <!-- popup -->
+        <div class="popupbg"></div>
+		<div class="popup pwcheck_popup pwcheck_popup_ver1">
+			<div class="pop_title">
+				<h3>패스워드</h3>
+                <span class="fas fa-times cancel"></span>
+            </div>
+			<p>패스워드를 확인해 주세요.</p>
+            <button type="submit" class="check"><span class="fas fa-check"></span> 확인</button>		
+		</div>
+        
+        <div class="popup pwcheck_popup pwcheck_popup_ver2">
+            <div class="pop_title">
+				<h3>패스워드</h3>
+                <span class="fas fa-times cancel"></span>
+            </div>
+			<p>패스워드를 확인해 주세요.</p>
+            <button type="submit" class="check"><span class="fas fa-check"></span> 확인</button>		
+		</div>
+        
+        <div class="popup pwcheck_popup pwcheck_popup_ver3 active">
+            <div class="pop_title">
+				<h3>패스워드</h3>
+                <span class="fas fa-times cancel"></span>
+            </div>
+			<p>패스워드를 확인해 주세요.</p>
+            <div class="check_txt">
+                <label for="my_code">인증번호</label>
+                <input type="number" id="my_code">
+            </div>
+            <div class="check_txt">
+                <label for="my_pw">패스워드</label>
+                <input type="password" id="my_pw">            
+            </div>
+            <button type="submit" class="cancel"><span class="fas fa-times"></span> 취소</button>
+            <button type="submit" class="check"><span class="fas fa-check"></span> 확인</button>		
+		</div>
+        
+        <div class="popup pwcheck_popup pwcheck_popup_ver4">
+            <div class="pop_title">
+				<h3>패스워드</h3>
+                <span class="fas fa-times cancel"></span>
+            </div>
+			<p>패스워드를 확인해 주세요.</p>
+            <button type="submit" class="cancel"><span class="fas fa-times"></span> 취소</button>
+            <button type="submit" class="check"><span class="fas fa-check"></span> 확인</button>		
+		</div>
+        <!-- //popup -->
     </div>
     <!-- //#wrap -->
 </body>
