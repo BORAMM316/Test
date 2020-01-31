@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/* MINDsLab. NBR. 20200130 */
+
+/* --------------------- contents --------------------- */
+.feed_lst {width: 100%; padding: 30px 15px; background: #e9e9e9;}
+.feed_lst li img {display: inline-block; float: left; height: 100%; margin: 0 25px 0 0;}
+.feed_lst .feed_cont {float: left;}
+.feed_lst .feed_cont .writer {font-size: 15px;}
+.feed_lst .feed_cont .writer span {margin: 0 0 0 30px; color: #6a6a82; font-size: 11px;}
+.feed_lst .feed_cont .txt {padding: 10px 0; font-size: 13px;}
+.feed_lst .feed_cont .btn_box li {float: left;}
+.feed_lst .feed_cont .btn_box li + li {margin: 0 0 0 10px;}
+.feed_lst .feed_cont .btn_box button{display: inline-block; color: #6a6a82; font-size: 11px;}
+.feed_lst .feed_cont .btn_box button .fas:before {margin: 0 5px 0 0;}
+.feed_lst .feed_cont .btn_box .share_btn_box {position: relative;}
+.feed_lst .feed_cont .btn_box .share_btn_box button {float: left;}
+.feed_lst .feed_cont .add_share_btn {display: none; width: 150px; margin: 0 0 0 10px;}
+
+.feed_lst .feed_cont .add_share_btn a {padding: 0 5px;}
