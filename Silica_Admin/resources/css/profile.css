@@ -8,12 +8,14 @@
 .feed_lst .feed_cont .writer {font-size: 15px;}
 .feed_lst .feed_cont .writer span {margin: 0 0 0 30px; color: #6a6a82; font-size: 11px;}
 .feed_lst .feed_cont .txt {padding: 10px 0; font-size: 13px;}
+.feed_lst .feed_cont .btn_box {display: inline-block; height: 20px;}
 .feed_lst .feed_cont .btn_box li {float: left;}
 .feed_lst .feed_cont .btn_box li + li {margin: 0 0 0 10px;}
 .feed_lst .feed_cont .btn_box button{display: inline-block; color: #6a6a82; font-size: 11px;}
 .feed_lst .feed_cont .btn_box button .fas:before {margin: 0 5px 0 0;}
-.feed_lst .feed_cont .btn_box .share_btn_box {position: relative;}
+.feed_lst .feed_cont .btn_box .share_btn_box {overflow: hidden; width: 20px; transition: all 0.3s;}
+.feed_lst .feed_cont .btn_box .share_btn_box.active {width: 170px;}
 .feed_lst .feed_cont .btn_box .share_btn_box button {float: left;}
-.feed_lst .feed_cont .add_share_btn {display: none; width: 150px; margin: 0 0 0 10px;}
-
+.feed_lst .feed_cont .add_share_btn {width: 150px; margin: 0 0 0 10px; transform: translateX(-160px);}
 .feed_lst .feed_cont .add_share_btn a {padding: 0 5px;}
+.feed_lst .feed_cont .add_share_btn.active {transform: translateX(0);}
