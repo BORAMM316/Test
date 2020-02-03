@@ -1,0 +1,20 @@
+@charset "UTF-8";
+/* MINDsLab. NBR. 20200121 */
+
+/* --------------------- common --------------------- */
+/* ---------- layout ---------- */
+#wrap {min-width: 1200px;}
+#contents {overflow: hidden; width: calc(100% - 12px); height: calc(100vh - 60px); padding: 30px 6px; background: #ededf2;}
+.stn_wrap {width: 100%; height: 100%; background: #fefefe;}
+/* .stn_wrap > .stn {float: left;} */
+
+/* ---------- button ---------- */
+/* square */
+.square_btn {display: inline-block; font-size: 13px;}
+.square_btn:hover {box-shadow: 0 10px 20px rgba(0,0,0,0.2); transition: all 0.5s;}
+
+.blue_square_btn {background: #5646ff; color: #fff;}
+.blue_square_btn:hover {background: #412ffc;} 
+
+.green_square_btn {background: #00c07e; color: #fff;}
+.green_square_btn:hover {background: #1ea577;} 

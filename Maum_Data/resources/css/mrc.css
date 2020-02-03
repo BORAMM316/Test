@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @charset "UTF-8";
 /* MINDsLab. NBR. 20200110 */
 
@@ -50,3 +51,47 @@
 .question_popup .question_write input {width: calc(100% - 28px); height:20px; padding: 7px 14px;}
 .question_popup .question_write label {display: block; position: absolute; top: 7px; left: 14px; color: #a5adb5; font-size: 13px; text-align: left;}
 .question_popup .complete_btn {margin: 20px 0 30px 0;}
+=======
+@charset "UTF-8";
+/* MINDsLab. NBR. 20200110 */
+
+/* -------------------- contents -------------------- */
+/* layout */
+#contents .cont_box > div > div:not(.work_btn) {float: left;}
+
+/* learning_txt */
+#contents .learning_txt {width: calc(58% - 20px); margin: 0 20px 0 0;}
+#contents .learning_txt .learning_cont {width: 100%; height: 740px; margin: 8px 0 20px 0; padding: 25px;}
+
+/* question_txt */
+#contents .question_txt {width: 42%;}
+#contents .question_txt > div {width: 100%;}
+#contents .question_txt .make_question, .question_txt .user_make {width: 100%; margin: 8px 0 20px 0;}
+#contents .question_txt .user_make:hover {opacity: 1; transition: opacity 0.2s;}
+#contents .question_txt .make_question{position: relative; height: 234px; }
+#contents .question_txt .make_question .question_lst {overflow: auto; height: 160px;}
+#contents .question_txt .make_question .question_lst > li {position: relative; height: 40px; border-bottom: 1px solid #cfd5eb; box-sizing: border-box;}
+#contents .question_txt .make_question .question_lst > li:hover {background: #f2f4fc;}
+#contents .question_txt .make_question .question_lst >li > div {width: calc(100% - 40px); padding: 0 20px;}
+#contents .question_txt .make_question .question_lst > li a {position: absolute; height: 100%; padding: 10px 0; color: #2c3f51; font-size: 14px; vertical-align: middle;}
+#contents .question_txt .make_question .question_lst > li button {position: absolute; height: 100%; vertical-align: middle;}
+#contents .question_txt .make_question .question_lst > li .edit {right: 50px; font-size: 14px; color: #808aab;}
+#contents .question_txt .make_question .question_lst > li .delete {right: 20px; margin: 0 0 0 10px;}
+
+#contents .question_txt .make_question .btn_box {position: absolute; width: 100%; max-height: 234px;}
+#contents .question_txt .make_question .btn_box .question_add_btn {position: absolute; top: 50%; left:  50%; transform: translate(-50%, -50%); width: 120px; height: 34px; border-radius: 3px; box-shadow: 1px 1px 1px 0 rgba(88, 96, 122, 0.2); border: solid 1px #cfd5eb; box-sizing: border-box; background: #fff; color: #2c3f51; font-size: 13px;}
+#contents .question_txt .make_question .btn_box .question_add_btn span {color: #5e77ff;}
+
+#contents .question_txt .user_make {height: 205px; opacity: 0.5;}
+
+#contents .question_txt .reason h3 {width: 455px;}
+
+/* work_btn */
+#contents .work_btn {position: relative; width: 100%; height: 40px;}
+#contents .work_btn button {position: absolute; height: 100%; padding: 0 30px; border-radius: 5px; background: #fff;}
+#contents .work_btn button span:before {margin: 0 5px 0 0;}
+#contents .work_btn .giveup_btn {border: solid 1px #808aab; color: #2c3f51;}
+#contents .work_btn .disable_btn {left: 155px; border: solid 1px #f5508b; color: #f5508b;}
+#contents .work_btn .save_next_btn {right: 148px; border: solid 1px #5e77ff; color: #5e77ff; font-weight: 500;}
+#contents .work_btn .temporary_save_btn {right: 0; background: #5e77ff; color: #fff; opacity: 0.5;}
+>>>>>>> c1de786298e47da44966739562a79625529ab430

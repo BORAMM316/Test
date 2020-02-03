@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @charset "UTF-8";
 /* MINDsLab. NBR. 20200113 */
 
@@ -56,3 +57,9 @@
 #contents .work_btn .giveup_btn {border: solid 1px #808aab; color: #2c3f51;}
 #contents .work_btn .save_next_btn {right: 220px; border: solid 1px #5e77ff; color: #5e77ff; font-weight: 500;}
 #contents .work_btn .temporary_save_btn {right: 0; background: #5e77ff; color: #fff; opacity: 0.5;}
+=======
+@charset "UTF-8";
+/* MINDsLab. NBR. 20200110 */
+
+/* -------------------- contents -------------------- */
+>>>>>>> c1de786298e47da44966739562a79625529ab430

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @charset "UTF-8";
 /* MINDsLab. NBR. 20200113 */
 
@@ -31,3 +32,43 @@
 #contents .work_btn .giveup_btn {border: solid 1px #808aab; color: #2c3f51;}
 #contents .work_btn .save_next_btn {right: 148px; border: solid 1px #5e77ff; color: #5e77ff; font-weight: 500;}
 #contents .work_btn .temporary_save_btn {right: 0; background: #5e77ff; color: #fff; opacity: 0.5;}
+=======
+@charset "UTF-8";
+/* MINDsLab. NBR. 20200113 */
+
+/* -------------------- contents -------------------- */
+#contents {float: left; width: calc(100% - 200px); height: 100%; padding: 0 40px;}
+#contents .cont_box {width: 100%; padding: 30px 0; border-top: solid 1px rgba(138,146,177,0.4);}
+#contents .script_box,
+#contents .write_box {float: left; margin: 24px 0 22px 0;}
+#contents .cont_box h3 {margin: 0 0 8px 0;}
+
+/* sound_box */
+#contents .sound_box {position: relative; width: 100%; height: 126px; padding: 23px 0 18px 0; border-radius: 5px; border: solid 1px #cfd5eb; background: #fff; text-align: center;}
+#contents .sound_box .speech_box {width: calc(100% - 50px); height: 60px; margin: 0 25px; border: solid 1px #808aab;}
+
+.reset_btn {position: absolute; top: 105px; left: calc(50% - 98px); transform: translate(-50%, 0);}
+
+/* script_box */
+#contents .script_box {width: calc(58% - 20px); margin: 24px 20px 22px 0;} 
+#contents .script_box .script_lst {overflow: auto; width: 100%; height: 546px; border-radius: 5px; border: solid 1px #cfd5eb; background: #fff; opacity: 0.5;}
+
+#contents .script_box .script_lst > li {width: 100%; height: 92px; padding: 12px 0; border-bottom: 1px solid #cfd5eb; box-sizing: border-box; font-size: 14px;}
+#contents .script_box .script_lst > li a {display: block; width: 100%; height: 100%;}
+#contents .script_box .script_lst > li:hover {background: #f2f4fc;}
+#contents .script_box .script_lst > li span {display: inline-block; float: left; width: 38px; height: 100%; padding: 0 0 0 12px; color: #808aab;}
+#contents .script_box .script_lst > li p {display: inline-block; float: left; width: calc(100% - 80px); height: 100%; padding: 0 30px 0 0;}
+
+/* write_box */
+#contents .write_box {width: 42%;}
+#contents .write_box .write_txt {width: 100%; height: 546px; padding: 14px; border-radius: 5px; border: solid 1px #cfd5eb; background: #fff;}
+
+/* work_btn */
+#contents .work_btn {position: relative; width: 100%; height: 40px;}
+#contents .work_btn button {position: absolute; height: 100%; padding: 0 30px; border-radius: 5px; background: #fff;}
+#contents .work_btn button span:before {margin: 0 5px 0 0;}
+#contents .work_btn .giveup_btn {border: solid 1px #808aab; color: #2c3f51;}
+#contents .work_btn .disable_btn {left: 155px; border: solid 1px #f5508b; color: #f5508b;}
+#contents .work_btn .save_next_btn {right: 148px; border: solid 1px #5e77ff; color: #5e77ff; font-weight: 500;}
+#contents .work_btn .temporary_save_btn {right: 0; background: #5e77ff; color: #fff; opacity: 0.5;}
+>>>>>>> c1de786298e47da44966739562a79625529ab430

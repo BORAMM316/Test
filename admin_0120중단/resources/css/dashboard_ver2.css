@@ -1,0 +1,9 @@
+@charset "UTF-8";
+/* MINDsLab. NBR. 20200117 */
+
+/* -------------------- contents -------------------- */
+/* payment_count */
+.total_count h3 {float: left; margin:25px 0 0 3%;}
+.total_count h3 span {font-size: 11px;}
+.total_count .payment_count {width: 95%; margin: 10px 0 50px 0; text-align: center;}
+.total_count .payment_count > dl {width: 230px;}

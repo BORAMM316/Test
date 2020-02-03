@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @charset "UTF-8";
 /* MINDsLab. NBR. 20200106 */
 
@@ -22,3 +23,26 @@
 #contents .work_space_blue .cost {color: #5e77ff;}
 
 #contents  .chevron_btn {margin: 17px 0 0 -9px;}
+=======
+@charset "UTF-8";
+/* MINDsLab. NBR. 20200106 */
+
+/* -------------------- contents -------------------- */
+#contents {float: left; width: calc(100% - 120px); height: 100%;}
+#contents .work_space_box {text-align: center;}
+
+#contents .work_space_pink .cont_box {overflow: hidden; width: 100%; height: 283px;}
+#contents .work_space_pink {border-bottom: 1px dotted #bfbfbf;}
+#contents .work_space_pink h2 span, #contents .work_space_pink .now_bar {background: #f5508b;}
+#contents .work_space_pink .cont_lst .progress_bar .now_per {border-color: #f5508b;}
+#contents .work_space_pink .cont_lst .progress_bar .now_per:before {border-top-color: #f5508b;}
+#contents .work_space_pink .cost {color: #f5508b;}
+
+#contents .work_space_blue .cont_box {overflow: hidden; width: 100%; height: 560px;}
+#contents .work_space_blue h2 span, #contents .work_space_blue .now_bar {background: #5e77ff;}
+#contents .work_space_blue .cont_lst .progress_bar .now_per {border-color: #5e77ff;}
+#contents .work_space_blue .cont_lst .progress_bar .now_per:before {border-top-color: #5e77ff;}
+#contents .work_space_blue .cost {color: #5e77ff;}
+
+#contents  .chevron_btn {margin: 17px 0 0 -9px;}
+>>>>>>> c1de786298e47da44966739562a79625529ab430

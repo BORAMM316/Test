@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    
+    <link rel="stylesheet" href="resources/css/reset.css">
+    <link rel="stylesheet" href="resources/css/font.css">
+    <link rel="stylesheet" href="resources/css/common.css">
+    <link rel="stylesheet" href="resources/css/member.css">
+    
+    <script type="text/javascript" src="resources/script/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="resources/script/common.js"></script>
+    
+    <title>MEMBER</title>
+</head>
+<body>
+    <!-- #wrap -->
+    <div id="wrap">
+        <!-- #header -->
+        <div id="header">
+            <!-- .sta -->
+            <div class="sta">
+                <h1>
+                    <a href="#none">ADMIN</a>
+                </h1>
+                
+                <!-- .gnb -->
+                <div class="gnb">
+                    <div class="location">
+                        <a href="#none"><span class="fas fa-home"></span></a>&nbsp;&nbsp;
+                        &gt;&nbsp;&nbsp;<a href="dashboard_ver2.html">DASHBOARD</a>
+                    </div>
+                    
+                    <div class="account_box">
+                        <a href="#none" class="my_account">
+                            <span class="far fa-user"></span>&nbsp;&nbsp;admin@console.com
+                            <img src="resources/images/img_arrow_down.png" alt="하향화살표">
+                        </a>
+                    </div>
+                </div>
+                <!-- //.gnb -->
+            </div>
+            <!-- //.sta -->
+        </div>
+        <!-- //#header -->
+        
+        <!-- #container -->
+        <div id="container">
+            <!-- .snb -->
+            <ul class="snb">
+                <li><a href="#none"><span class="fas fa-chart-line"></span>&nbsp;&nbsp;DASHBOARD</a>
+                    <ul class="sub_lst">
+                        <li><a href="#none">유료 회원</a></li>
+                        <li><a href="#none">API 발급 회원</a></li>
+                        <li><a href="#none">해지 회원</a></li>
+                        <li><a href="#none">전체 회원</a></li>
+                    </ul>
+                </li>
+                <li><a href="#none"><span class="fas fa-user-friends"></span>&nbsp;&nbsp;회원관리</a>
+                    <ul class="sub_lst">
+                        <li><a href="#none">유료 회원</a></li>
+                        <li><a href="#none">API 발급 회원</a></li>
+                        <li><a href="#none">해지 회원</a></li>
+                        <li><a href="#none">전체 회원</a></li>
+                    </ul>
+                </li>
+                <li><a href="#none"><span class="far fa-credit-card"></span>&nbsp;&nbsp;결제내역</a>
+                    <ul class="sub_lst">
+                        <li><a href="#none">유료 회원</a></li>
+                        <li><a href="#none">API 발급 회원</a></li>
+                        <li><a href="#none">해지 회원</a></li>
+                        <li><a href="#none">전체 회원</a></li>
+                    </ul>
+                </li>
+                <li><a href="#none"><span class="fas fa-users-cog"></span>&nbsp;&nbsp;권한관리</a>
+                    <ul class="sub_lst">
+                        <li><a href="#none">유료 회원</a></li>
+                        <li><a href="#none">API 발급 회원</a></li>
+                        <li><a href="#none">해지 회원</a></li>
+                        <li><a href="#none">전체 회원</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- //.snb -->
+            
+            <!-- #contents -->
+            <div id="contents">
+                <!-- .user_search -->
+                <div class="user_search clearfix">  
+                    <h3>
+                        <span class="fas fa-chevron-right"></span>&nbsp;&nbsp;maum.ai 회원조회
+                    </h3>                  
+                    <!-- .search_box -->
+                    <div class="search_box">
+                        <div>
+                            <div class="left_box">
+                                <div class="status_box">
+                                    <p>Status</p>
+                                    <select class="status">
+                                        <option value="">--</option>
+                                        <option value="">A</option>
+                                        <option value="">B</option>
+                                        <option value="">C</option>
+                                        <option value="">D</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="search_date date">
+                                    <p>기준일자</p>
+                                    <input type="text">
+                                </div>
+                                
+                                <div class="pd_name">
+                                    <p>Product</p>
+                                    <input type="text">
+                                </div>
+                                
+                                <div class="pay_box">
+                                    <p>결제 수단</p>
+                                    <select class="pay">
+                                        <option value="">--</option>
+                                        <option value="">A</option>
+                                        <option value="">B</option>
+                                        <option value="">C</option>
+                                        <option value="">D</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="api_box">
+                                    <p>API Status</p>
+                                    <select class="api">
+                                        <option value="">--</option>
+                                        <option value="">A</option>
+                                        <option value="">B</option>
+                                        <option value="">C</option>
+                                        <option value="">D</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="right_box">
+                                <div class="radio_box">
+                                    <div class="radio_btn">
+                                        <input type="radio" name="user_type" id="total">
+                                        <label for="total">전체</label>
+                                    </div>
+                                    
+                                    <div class="radio_btn">
+                                        <input type="radio" name="user_type" id="business">
+                                        <label for="business">Business</label>
+                                    </div>
+                                    
+                                    <div class="radio_btn">
+                                        <input type="radio" name="user_type" id="charge">
+                                        <label for="charge">유료</label>
+                                    </div>
+                                    
+                                    <div class="radio_btn">
+                                        <input type="radio" name="user_type" id="external">
+                                        <label for="external">외부</label>
+                                    </div>
+                                    
+                                    <div class="radio_btn">
+                                        <input type="radio" name="user_type" id="internal">
+                                        <label for="internal">내부</label>
+                                    </div>
+                                    
+                                    <div class="radio_btn">
+                                        <input type="radio" name="user_type" id="cancel">
+                                        <label for="cancel">해지</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="user_info_box">
+                                    <div class="user_name">
+                                        <p>Name</p>
+                                        <input type="text" id="name">
+                                        <label for="name">고객명</label>
+                                    </div>
+                                    
+                                    <div class="user_mail">
+                                        <p>Email</p>
+                                        <input type="email" id="mail">
+                                        <label for="mail">이메일</label>
+                                    </div>
+                                    
+                                    <div class="user_company">
+                                        <p>Company</p>
+                                        <input type="text" id="company">
+                                        <label for="company">회사</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="turn">
+                                    <p>회차</p>
+                                    <input type="text">
+                                    <span>회차</span>
+                                    <div class="radio_btn">
+                                        <input type="radio" name="turn_type" id="more">
+                                        <label for="more">이상</label>
+                                    </div>
+                                    <div class="radio_btn">
+                                        <input type="radio" name="turn_type" id="less">
+                                        <label for="less">이하</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="pay_date date">
+                                    <p>결제일</p>
+                                    <input type="text"> <span>&minus;</span> <input type="text">
+                                </div>
+                                
+                                <div class="marketing_box">
+                                    <div class="usage">
+                                        <p>Usage</p>
+                                        <input type="text"><em>%</em> <span>&minus;</span> <input type="text"><em>%</em>
+                                    </div>
+                                    
+                                    <div class="maketing_agree">
+                                        <p>마케팅 동의</p>
+                                        <div>
+                                            <input type="radio" name="agree_type" id="yes">
+                                            <label for="yes">Yes</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" name="agree_type" id="no">
+                                            <label for="no">No</label>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="sign_route_box">
+                                        <p>가입 경로</p>
+                                        <select class="sign_route">
+                                            <option value="">--</option>
+                                            <option value="">A</option>
+                                            <option value="">B</option>
+                                            <option value="">C</option>
+                                            <option value="">D</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="search_btn">검색</button>
+                    </div>
+                    <!-- //.search_box -->
+                </div>
+                <!-- //.user_search -->
+                
+                <!-- .search_lst -->
+                <div class="search_lst lst_box">
+                    <table>
+                        <caption class="hide">검색내역리스트</caption>
+                        
+                        <thead>
+                            <tr>
+                                <th>
+                                    <input type="checkbox" name="lst_chk" id="total_check">
+                                    <label for="total_check">&nbsp;</label>
+                                </th>
+                                <th>No.</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Company</th>
+                                <th>Status</th>
+                                <th>Product</th>
+                                <th>회차</th>
+                                <th>Payment</th>
+                                <th>DateFrom</th>
+                                <th>DateTo</th>
+                                <th>PaymentDate</th>
+                                <th>api Status</th>
+                                <th>Usage(%)</th>
+                                <th>Marketing</th>
+                                <th>Register Path</th>
+                                <th>CreateDate</th>
+                                <th>UpdateDate</th>
+                            </tr>
+                        </thead>
+                        
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" id="user1_check" class="lst_chk">
+                                    <label for="user1_check">&nbsp;</label>
+                                </td>
+                                <td>1</td>
+                                <td>홍길동</td>
+                                <td>Test001@mindslab.ai</td>
+                                <td>323-2244-2222</td>
+                                <td>마인즈랩</td>
+                                <td>business</td>
+                                <td>TTS</td>
+                                <td>회차</td>
+                                <td>card</td>
+                                <td>2019.09.11</td>
+                                <td>2019.09.11</td>
+                                <td>2019-11-06</td>
+                                <td>잠김</td>
+                                <td>90%</td>
+                                <td>Yes</td>
+                                <td>관련기사 등 검색 조건</td>
+                                <td>2019.09.11</td>
+                                <td>2019.09.11</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" id="user2_check" class="lst_chk">
+                                    <label for="user2_check">&nbsp;</label>
+                                </td>
+                                <td>2</td>
+                                <td>홍길동</td>
+                                <td>Test001@mindslab.ai</td>
+                                <td>323-2244-2222</td>
+                                <td>마인즈랩</td>
+                                <td>business</td>
+                                <td>TTS</td>
+                                <td>회차</td>
+                                <td>card</td>
+                                <td>2019.09.11</td>
+                                <td>2019.09.11</td>
+                                <td>2019-11-06</td>
+                                <td>잠김</td>
+                                <td>90%</td>
+                                <td>Yes</td>
+                                <td>관련기사 등 검색 조건</td>
+                                <td>2019.09.11</td>
+                                <td>2019.09.11</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" id="user3_check" class="lst_chk">
+                                    <label for="user3_check">&nbsp;</label>
+                                </td>
+                                <td>3</td>
+                                <td>홍길동</td>
+                                <td>Test001@mindslab.ai</td>
+                                <td>323-2244-2222</td>
+                                <td>마인즈랩</td>
+                                <td>business</td>
+                                <td>TTS</td>
+                                <td>회차</td>
+                                <td>card</td>
+                                <td>2019.09.11</td>
+                                <td>2019.09.11</td>
+                                <td>2019-11-06</td>
+                                <td>잠김</td>
+                                <td>90%</td>
+                                <td>Yes</td>
+                                <td>관련기사 등 검색 조건</td>
+                                <td>2019.09.11</td>
+                                <td>2019.09.11</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" id="user4_check" class="lst_chk">
+                                    <label for="user4_check">&nbsp;</label>
+                                </td>
+                                <td>4</td>
+                                <td>홍길동</td>
+                                <td>Test001@mindslab.ai</td>
+                                <td>323-2244-2222</td>
+                                <td>마인즈랩</td>
+                                <td>business</td>
+                                <td>TTS</td>
+                                <td>회차</td>
+                                <td>card</td>
+                                <td>2019.09.11</td>
+                                <td>2019.09.11</td>
+                                <td>2019-11-06</td>
+                                <td>잠김</td>
+                                <td>90%</td>
+                                <td>Yes</td>
+                                <td>관련기사 등 검색 조건</td>
+                                <td>2019.09.11</td>
+                                <td>2019.09.11</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" id="user5_check" class="lst_chk">
+                                    <label for="user5_check">&nbsp;</label>
+                                </td>
+                                <td>5</td>
+                                <td>홍길동</td>
+                                <td>Test001@mindslab.ai</td>
+                                <td>323-2244-2222</td>
+                                <td>마인즈랩</td>
+                                <td>business</td>
+                                <td>TTS</td>
+                                <td>회차</td>
+                                <td>card</td>
+                                <td>2019.09.11</td>
+                                <td>2019.09.11</td>
+                                <td>2019-11-06</td>
+                                <td>잠김</td>
+                                <td>90%</td>
+                                <td>Yes</td>
+                                <td>관련기사 등 검색 조건</td>
+                                <td>2019.09.11</td>
+                                <td>2019.09.11</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" id="user6_check" class="lst_chk">
+                                    <label for="user6_check">&nbsp;</label>
+                                </td>
+                                <td>6</td>
+                                <td>홍길동</td>
+                                <td>Test001@mindslab.ai</td>
+                                <td>323-2244-2222</td>
+                                <td>마인즈랩</td>
+                                <td>business</td>
+                                <td>TTS</td>
+                                <td>회차</td>
+                                <td>card</td>
+                                <td>2019.09.11</td>
+                                <td>2019.09.11</td>
+                                <td>2019-11-06</td>
+                                <td>잠김</td>
+                                <td>90%</td>
+                                <td>Yes</td>
+                                <td>관련기사 등 검색 조건</td>
+                                <td>2019.09.11</td>
+                                <td>2019.09.11</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" id="user7_check" class="lst_chk">
+                                    <label for="user7_check">&nbsp;</label>
+                                </td>
+                                <td>7</td>
+                                <td>홍길동</td>
+                                <td>Test001@mindslab.ai</td>
+                                <td>323-2244-2222</td>
+                                <td>마인즈랩</td>
+                                <td>business</td>
+                                <td>TTS</td>
+                                <td>회차</td>
+                                <td>card</td>
+                                <td>2019.09.11</td>
+                                <td>2019.09.11</td>
+                                <td>2019-11-06</td>
+                                <td>잠김</td>
+                                <td>90%</td>
+                                <td>Yes</td>
+                                <td>관련기사 등 검색 조건</td>
+                                <td>2019.09.11</td>
+                                <td>2019.09.11</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" id="user8_check" class="lst_chk">
+                                    <label for="user8_check">&nbsp;</label>
+                                </td>
+                                <td>8</td>
+                                <td>홍길동</td>
+                                <td>Test001@mindslab.ai</td>
+                                <td>323-2244-2222</td>
+                                <td>마인즈랩</td>
+                                <td>business</td>
+                                <td>TTS</td>
+                                <td>회차</td>
+                                <td>card</td>
+                                <td>2019.09.11</td>
+                                <td>2019.09.11</td>
+                                <td>2019-11-06</td>
+                                <td>잠김</td>
+                                <td>90%</td>
+                                <td>Yes</td>
+                                <td>관련기사 등 검색 조건</td>
+                                <td>2019.09.11</td>
+                                <td>2019.09.11</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" id="user9_check" class="lst_chk">
+                                    <label for="user9_check">&nbsp;</label>
+                                </td>
+                                <td>9</td>
+                                <td>홍길동</td>
+                                <td>Test001@mindslab.ai</td>
+                                <td>323-2244-2222</td>
+                                <td>마인즈랩</td>
+                                <td>business</td>
+                                <td>TTS</td>
+                                <td>회차</td>
+                                <td>card</td>
+                                <td>2019.09.11</td>
+                                <td>2019.09.11</td>
+                                <td>2019-11-06</td>
+                                <td>잠김</td>
+                                <td>90%</td>
+                                <td>Yes</td>
+                                <td>관련기사 등 검색 조건</td>
+                                <td>2019.09.11</td>
+                                <td>2019.09.11</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" id="user10_check" class="lst_chk">
+                                    <label for="user10_check">&nbsp;</label>
+                                </td>
+                                <td>10</td>
+                                <td>홍길동</td>
+                                <td>Test001@mindslab.ai</td>
+                                <td>323-2244-2222</td>
+                                <td>마인즈랩</td>
+                                <td>business</td>
+                                <td>TTS</td>
+                                <td>회차</td>
+                                <td>card</td>
+                                <td>2019.09.11</td>
+                                <td>2019.09.11</td>
+                                <td>2019-11-06</td>
+                                <td>잠김</td>
+                                <td>90%</td>
+                                <td>Yes</td>
+                                <td>관련기사 등 검색 조건</td>
+                                <td>2019.09.11</td>
+                                <td>2019.09.11</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" id="user10_check" class="lst_chk">
+                                    <label for="user10_check">&nbsp;</label>
+                                </td>
+                                <td>11</td>
+                                <td>홍길동</td>
+                                <td>Test001@mindslab.ai</td>
+                                <td>323-2244-2222</td>
+                                <td>마인즈랩</td>
+                                <td>business</td>
+                                <td>TTS</td>
+                                <td>회차</td>
+                                <td>card</td>
+                                <td>2019.09.11</td>
+                                <td>2019.09.11</td>
+                                <td>2019-11-06</td>
+                                <td>잠김</td>
+                                <td>90%</td>
+                                <td>Yes</td>
+                                <td>관련기사 등 검색 조건</td>
+                                <td>2019.09.11</td>
+                                <td>2019.09.11</td>
+                            </tr>                            
+                        </tbody>
+                    </table>
+                </div>
+                <!-- //.search_lst -->
+                
+                <!-- .indicator_box -->
+                <div class="indicator_box">
+                    <div class="page_indicator">
+                        <p>전체 <span>4</span> &sol; 10</p>
+                    </div>
+                    
+                    <div class="page_btn_box">
+                        <div class="prev_btn">
+                            
+                        </div>
+                        
+                        <div class="page_num">
+                            
+                        </div>
+                        
+                        <div class="next_btn">
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- //.indicator_box -->
+            </div>
+            <!-- //#contetns -->
+        </div>
+        <!-- //#container -->
+        
+        <!-- #footer -->
+        <div id="footer">
+            <p>&copy; MINDsLab. All rights reserved.</p>
+        </div>
+        <!-- //#footer -->
+        
+        <!-- .popup -->
+        <div class="popupbg"></div>
+        <div class="status_change popup">
+            <div class="popup_title">
+                <h3>Status 변경</h3>
+                <span class="fas fa-times"></span>
+            </div>        
+            <button type="submit">확인</button>
+            <div class="change_detail">
+                <p>요청자: <span>admin01</span></p>
+                <p>현재 status: <span>subcribing</span></p>
+                <p>변경 status: </p>
+                <select class="status">
+                    <option value="">--</option>
+                    <option value="">A</option>
+                    <option value="">B</option>
+                    <option value="">C</option>
+                    <option value="">D</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="service_date_change popup">
+            <h3>서비스 기간 변경</h3>
+            <button type="submit">확인</button>
+        </div>
+        <!-- //.popup -->
+    </div>
+    <!-- //#wrap -->
+</body>
+</html>

@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">    
+    <link rel="stylesheet" href="resources/css/reset.css">
+    <!-- <link rel="stylesheet" href="resources/css/jquery.mCustomScrollbar.css"> -->
+    <link rel="stylesheet" href="resources/css/font.css">
+    <link rel="stylesheet" href="resources/css/common.css">
+    <link rel="stylesheet" href="resources/css/email.css">
+    
+    <script type="text/javascript" src="resources/js/jquery-1.11.2.min.js"></script>
+    <!-- <script type="text/javascript" src="resources/js/jquery.mCustomScrollbar.js"></script> -->
+    <script type="text/javascript" src="resources/js/email.js"></script>
+    
+    <title>Email &minus; Silica</title>
+</head>
+<body>
+    <!-- #wrap -->
+    <div id="wrap">
+        <!-- #container -->
+        <div id="container">
+            <!-- #contents -->
+            <div id="contents">
+                <!-- .stn_wrap -->
+                <div class="stn_wrap">
+                    <!-- .stn_lnb -->
+                    <div class="stn_lnb stn">
+                        <button type="button" class="blue_square_btn square_btn">Compose</button>
+                        
+                        <!-- .lst_menu -->
+                        <div class="lst_menu">
+                            <h3 class="hide">메일함 메뉴</h3>
+                            <ul>
+                                <li class="active">
+                                    <a href="#none" class="lst ">
+                                        <span class="far fa-envelope"></span>
+                                        <em>Inbox</em>
+                                    </a>                                        
+                                    <a href="#none" class="notify notify_green active">
+                                        <span class="hide">안읽은 메일 수</span>
+                                        <em class="green">8</em>
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="#none" class="lst">
+                                        <span class="fas fa-share"></span>
+                                        <em>Sent</em>
+                                    </a>                                        
+                                    <a href="#none" class="notify notify_green">
+                                        <span class="hide">알림제목</span>
+                                        <em class="green">갯수</em>
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="#none" class="lst">
+                                        <span class="far fa-file"></span>
+                                        <em>Draft</em>
+                                    </a>                                        
+                                    <a href="#none" class="notify notify_yellow active">
+                                        <span class="hide">새로운 문서</span>
+                                        <em class="green">4</em>
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="#none" class="lst">
+                                        <span class="fas fa-upload"></span>
+                                        <em>Outbox</em>
+                                    </a>                                        
+                                    <a href="#none" class="notify notify_red active">
+                                        <span class="hide">임시 보관함</span>
+                                        <em class="green">3</em>
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="#none" class="lst">
+                                        <span class="far fa-star"></span>
+                                        <em>Starred</em>
+                                    </a>                                        
+                                    <a href="#none" class="notify notify_green">
+                                        <span class="hide">알림제목</span>
+                                        <em class="green">갯수</em>
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="#none" class="lst">
+                                        <span class="fas fa-trash"></span>
+                                        <em>Trash</em>
+                                    </a>                                        
+                                    <a href="#none" class="notify">
+                                        <span class="hide">알림제목</span>
+                                        <em class="green">갯수</em>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- //.lst_menu -->
+                        
+                        <!-- .lst_chat -->
+                        <div class="lst_chat">
+                            <h3 class="hide">채팅가능유저(접속중) 리스트</h3>
+                            <h3>
+                                <span>Chats</span>
+                                <em>Online</em>
+                            </h3>
+                            
+                            <ul class="profile scrollbar">
+                                <li>
+                                    <a href="#none">
+                                    <img src="resources/images/img_profile.png" alt="채팅리스트 프로필사진">
+                                    <span>david</span>
+                                    <em>python develope</em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none">
+                                    <img src="resources/images/img_profile.png" alt="채팅리스트 프로필사진">
+                                    <span>stella johnson</span>
+                                    <em>SEO export</em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none">
+                                    <img src="resources/images/img_profile.png" alt="채팅리스트 프로필사진">
+                                    <span>catherine</span>
+                                    <em>IOS developer</em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none">
+                                    <img src="resources/images/img_profile.png" alt="채팅리스트 프로필사진">
+                                    <span>john doe</span>
+                                    <em>business analyst</em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none">
+                                    <img src="resources/images/img_profile.png" alt="채팅리스트 프로필사진">
+                                    <span>daniel russell</span>
+                                    <em>tester</em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none">
+                                    <img src="resources/images/img_profile.png" alt="채팅리스트 프로필사진">
+                                    <span>sarah graves</span>
+                                    <em>admin</em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none">
+                                    <img src="resources/images/img_profile.png" alt="채팅리스트 프로필사진">
+                                    <span>sophia lara</span>
+                                    <em>UI/UX</em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none">
+                                    <img src="resources/images/img_profile.png" alt="채팅리스트 프로필사진">
+                                    <span>catherine myers</span>
+                                    <em>business analyst</em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none">
+                                    <img src="resources/images/img_profile.png" alt="채팅리스트 프로필사진">
+                                    <span>tim</span>
+                                    <em>php developer</em>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none">
+                                    <img src="resources/images/img_profile.png" alt="채팅리스트 프로필사진">
+                                    <span>david</span>
+                                    <em>python develope</em>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- //.lst_chat -->
+                    </div>
+                    <!-- //.stn_lnb -->
+                    
+                    <!-- .stn_mail -->
+                    <div class="stn_mail stn">
+                        <div class="srch_box">
+                            <h3 class="hide">메일검색창</h3>
+                            <input type="text" id="mail_srch">
+                            <label for="mail_srch">Search mail</label>
+                            <button type="button" class="clear_btn"><span class="fas fa-times"></span></button>
+                        </div>
+                        
+                        <!-- .lst_mail -->
+                        <div class="lst_mail">
+                            <h3 class="hide">받은메일함 리스트</h3>
+                            <ul class="scrollbar">
+                                <li>
+                                    <div class="mail_chk">
+                                        <input type="checkbox" id="mail_lst1">
+                                        <label for="mail_lst1">&nbsp;</label>
+                                    </div>
+                                    
+                                    <div class="mail_info">
+                                        <span><a href="#none">david moore</a></span>
+                                        <em><a href="#none">Hi Emily, Please be informed that the new project project</a></em>
+                                    </div>
+                                    
+                                    <div class="mail_starred">
+                                        <a href="#none">
+                                            <span class="far fa-star"></span>
+                                            <span class="fas fa-star"></span>
+                                        </a>  
+                                    </div>              
+                                </li>
+                                
+                                <li>
+                                    <div class="mail_chk">
+                                        <input type="checkbox" id="mail_lst2">
+                                        <label for="mail_lst2">&nbsp;</label>
+                                    </div>
+                                    
+                                    <div class="mail_info">
+                                        <span><a href="#none">microsoft account password change</a></span>
+                                        <em><a href="#none">Change the password for your microsoft Account</a></em>
+                                    </div>
+                                    
+                                    <div class="mail_starred">
+                                        <a href="#none">
+                                            <span class="far fa-star"></span>
+                                            <span class="fas fa-star"></span>
+                                        </a>  
+                                    </div>              
+                                </li>
+                                
+                                <li>
+                                    <div class="mail_chk">
+                                        <input type="checkbox" id="mail_lst3">
+                                        <label for="mail_lst3">&nbsp;</label>
+                                    </div>
+                                    
+                                    <div class="mail_info">
+                                        <span><a href="#none">shphia lara</a></span>
+                                        <em><a href="#none">Hello, last date for registering for the annual last date for registering</a></em>
+                                    </div>
+                                    
+                                    <div class="mail_starred">
+                                        <a href="#none">
+                                            <span class="far fa-star"></span>
+                                            <span class="fas fa-star"></span>
+                                        </a>  
+                                    </div>              
+                                </li>
+                                
+                                <li>
+                                    <div class="mail_chk">
+                                        <input type="checkbox" id="mail_lst4">
+                                        <label for="mail_lst4">&nbsp;</label>
+                                    </div>
+                                    
+                                    <div class="mail_info">
+                                        <span><a href="#none">stella davidson</a></span>
+                                        <em><a href="#none">Hey there, can you send me this year's holiday</a></em>
+                                    </div>
+                                    
+                                    <div class="mail_starred">
+                                        <a href="#none">
+                                            <span class="far fa-star"></span>
+                                            <span class="fas fa-star"></span>
+                                        </a>  
+                                    </div>              
+                                </li>
+                                
+                                <li>
+                                    <div class="mail_chk">
+                                        <input type="checkbox" id="mail_lst5">
+                                        <label for="mail_lst5">&nbsp;</label>
+                                    </div>
+                                    
+                                    <div class="mail_info">
+                                        <span><a href="#none">david moore</a></span>
+                                        <em><a href="#none">FYI</a></em>
+                                    </div>
+                                    
+                                    <div class="mail_starred">
+                                        <a href="#none">
+                                            <span class="far fa-star"></span>
+                                            <span class="fas fa-star"></span>
+                                        </a>  
+                                    </div>             
+                                </li>
+                                
+                                <li>
+                                    <div class="mail_chk">
+                                        <input type="checkbox" id="mail_lst6">
+                                        <label for="mail_lst6">&nbsp;</label>
+                                    </div>
+                                    
+                                    <div class="mail_info">
+                                        <span><a href="#none">daniel russel</a></span>
+                                        <em><a href="#none">Hi, Please find this week's update this week's update</a></em>
+                                    </div>
+                                    
+                                    <div class="mail_starred">
+                                        <a href="#none">
+                                            <span class="far fa-star"></span>
+                                            <span class="fas fa-star"></span>
+                                        </a>  
+                                    </div>              
+                                </li>
+                                
+                                <li>
+                                    <div class="mail_chk">
+                                        <input type="checkbox" id="mail_lst7">
+                                        <label for="mail_lst7">&nbsp;</label>
+                                    </div>
+                                    
+                                    <div class="mail_info">
+                                        <span><a href="#none">sarah graves</a></span>
+                                        <em><a href="#none">Hey, can you send me this year's holiday cale this year's holiday cale</a></em>
+                                    </div>
+                                    
+                                    <div class="mail_starred">
+                                        <a href="#none">
+                                            <span class="far fa-star"></span>
+                                            <span class="fas fa-star"></span>
+                                        </a>  
+                                    </div>             
+                                </li>
+                                
+                                <li>
+                                    <div class="mail_chk">
+                                        <input type="checkbox" id="mail_lst8">
+                                        <label for="mail_lst8">&nbsp;</label>
+                                    </div>
+                                    
+                                    <div class="mail_info">
+                                        <span><a href="#none">bruno king</a></span>
+                                        <em><a href="#none">Hi, Please find this week's monitoring report week's monitoring report</a></em>
+                                    </div>
+                                    
+                                    <div class="mail_starred">
+                                        <a href="#none">
+                                            <span class="far fa-star"></span>
+                                            <span class="fas fa-star"></span>
+                                        </a>  
+                                    </div>              
+                                </li>
+                                
+                                <li>
+                                    <div class="mail_chk">
+                                        <input type="checkbox" id="mail_lst9">
+                                        <label for="mail_lst9">&nbsp;</label>
+                                    </div>
+                                    
+                                    <div class="mail_info">
+                                        <span><a href="#none">Me, Mark</a></span>
+                                        <em><a href="#none">Hi, Testing is complete. The system is ready system is ready</a></em>
+                                    </div>
+                                    
+                                    <div class="mail_starred">
+                                        <a href="#none">
+                                            <span class="far fa-star"></span>
+                                            <span class="fas fa-star"></span>
+                                        </a>  
+                                    </div>              
+                                </li>
+                                
+                                <li>
+                                    <div class="mail_chk">
+                                        <input type="checkbox" id="mail_lst10">
+                                        <label for="mail_lst10">&nbsp;</label>
+                                    </div>
+                                    
+                                    <div class="mail_info">
+                                        <span><a href="#none">Catherine Myers</a></span>
+                                        <em><a href="#none">Template Market: Limited Period Offer!!! 50% Limited Period Offer!!! D</a></em>
+                                    </div>
+                                    
+                                    <div class="mail_starred">
+                                        <a href="#none">
+                                            <span class="far fa-star"></span>
+                                            <span class="fas fa-star"></span>
+                                        </a>  
+                                    </div>             
+                                </li>
+                                
+                                <li>
+                                    <div class="mail_chk">
+                                        <input type="checkbox" id="mail_lst11">
+                                        <label for="mail_lst11">&nbsp;</label>
+                                    </div>
+                                    
+                                    <div class="mail_info">
+                                        <span><a href="#none">daniel russell</a></span>
+                                        <em><a href="#none">Hi Emily, Please approve my leaves for 10 day my leaves for 10 day</a></em>
+                                    </div>
+                                    
+                                    <div class="mail_starred">
+                                        <a href="#none">
+                                            <span class="far fa-star"></span>
+                                            <span class="fas fa-star"></span>
+                                        </a>  
+                                    </div>              
+                                </li>
+                                
+                                <li>
+                                    <div class="mail_chk">
+                                        <input type="checkbox" id="mail_lst12">
+                                        <label for="mail_lst12">&nbsp;</label>
+                                    </div>
+                                    
+                                    <div class="mail_info">
+                                        <span><a href="#none">Sarah Graves</a></span>
+                                        <em><a href="#none">Hello there, Make the most of the limited period of the limited period</a></em>
+                                    </div>
+                                    
+                                    <div class="mail_starred">
+                                        <a href="#none">
+                                            <span class="far fa-star"></span>
+                                            <span class="fas fa-star"></span>
+                                        </a>  
+                                    </div>              
+                                </li>
+                                
+                                <li>
+                                    <div class="mail_chk">
+                                        <input type="checkbox" id="mail_lst13">
+                                        <label for="mail_lst13">&nbsp;</label>
+                                    </div>
+                                    
+                                    <div class="mail_info">
+                                        <span><a href="#none">John Doe</a></span>
+                                        <em><a href="#none">This is the first reminder to complete the onlin reminder to complete the onlin</a></em>
+                                    </div>
+                                    
+                                    <div class="mail_starred">
+                                        <a href="#none">
+                                            <span class="far fa-star"></span>
+                                            <span class="fas fa-star"></span>
+                                        </a>  
+                                    </div>              
+                                </li>
+                                
+                                <li>
+                                    <div class="mail_chk">
+                                        <input type="checkbox" id="mail_lst14">
+                                        <label for="mail_lst14">&nbsp;</label>
+                                    </div>
+                                    
+                                    <div class="mail_info">
+                                        <span><a href="#none">Bruno</a></span>
+                                        <em><a href="#none">Dear Employee, As per the regulations all em regulations all em</a></em>
+                                    </div>
+                                    
+                                    <div class="mail_starred">
+                                        <a href="#none">
+                                            <span class="far fa-star"></span>
+                                            <span class="fas fa-star"></span>
+                                        </a>  
+                                    </div>              
+                                </li>
+                                
+                                <li>
+                                    <div class="mail_chk">
+                                        <input type="checkbox" id="mail_lst14">
+                                        <label for="mail_lst14">&nbsp;</label>
+                                    </div>
+                                    
+                                    <div class="mail_info">
+                                        <span><a href="#none">Bruno</a></span>
+                                        <em><a href="#none">Dear Employee, As per the regulations all em regulations all em</a></em>
+                                    </div>
+                                    
+                                    <div class="mail_starred">
+                                        <a href="#none">
+                                            <span class="far fa-star"></span>
+                                            <span class="fas fa-star"></span>
+                                        </a>  
+                                    </div>              
+                                </li>
+                                
+                                <li>
+                                    <div class="mail_chk">
+                                        <input type="checkbox" id="mail_lst14">
+                                        <label for="mail_lst14">&nbsp;</label>
+                                    </div>
+                                    
+                                    <div class="mail_info">
+                                        <span><a href="#none">Bruno</a></span>
+                                        <em><a href="#none">Dear Employee, As per the regulations all em regulations all em</a></em>
+                                    </div>
+                                    
+                                    <div class="mail_starred">
+                                        <a href="#none">
+                                            <span class="far fa-star"></span>
+                                            <span class="fas fa-star"></span>
+                                        </a>  
+                                    </div>              
+                                </li>
+                                
+                                <li>
+                                    <div class="mail_chk">
+                                        <input type="checkbox" id="mail_lst14">
+                                        <label for="mail_lst14">&nbsp;</label>
+                                    </div>
+                                    
+                                    <div class="mail_info">
+                                        <span><a href="#none">Bruno</a></span>
+                                        <em><a href="#none">Dear Employee, As per the regulations all em regulations all em</a></em>
+                                    </div>
+                                    
+                                    <div class="mail_starred">
+                                        <a href="#none">
+                                            <span class="far fa-star"></span>
+                                            <span class="fas fa-star"></span>
+                                        </a>  
+                                    </div>              
+                                </li>
+                                
+                                <li>
+                                    <div class="mail_chk">
+                                        <input type="checkbox" id="mail_lst14">
+                                        <label for="mail_lst14">&nbsp;</label>
+                                    </div>
+                                    
+                                    <div class="mail_info">
+                                        <span><a href="#none">Bruno</a></span>
+                                        <em><a href="#none">Dear Employee, As per the regulations all em regulations all em</a></em>
+                                    </div>
+                                    
+                                    <div class="mail_starred">
+                                        <a href="#none">
+                                            <span class="far fa-star"></span>
+                                            <span class="fas fa-star"></span>
+                                        </a>  
+                                    </div>              
+                                </li>
+                                
+                                <li>
+                                    <div class="mail_chk">
+                                        <input type="checkbox" id="mail_lst14">
+                                        <label for="mail_lst14">&nbsp;</label>
+                                    </div>
+                                    
+                                    <div class="mail_info">
+                                        <span><a href="#none">Bruno</a></span>
+                                        <em><a href="#none">Dear Employee, As per the regulations all em regulations all em</a></em>
+                                    </div>
+                                    
+                                    <div class="mail_starred">
+                                        <a href="#none">
+                                            <span class="far fa-star"></span>
+                                            <span class="fas fa-star"></span>
+                                        </a>  
+                                    </div>              
+                                </li>
+                                
+                                <li>
+                                    <div class="mail_chk">
+                                        <input type="checkbox" id="mail_lst14">
+                                        <label for="mail_lst14">&nbsp;</label>
+                                    </div>
+                                    
+                                    <div class="mail_info">
+                                        <span><a href="#none">Bruno</a></span>
+                                        <em><a href="#none">Dear Employee, As per the regulations all em regulations all em</a></em>
+                                    </div>
+                                    
+                                    <div class="mail_starred">
+                                        <a href="#none">
+                                            <span class="far fa-star"></span>
+                                            <span class="fas fa-star"></span>
+                                        </a>  
+                                    </div>              
+                                </li>
+                                
+                                <li>
+                                    <div class="mail_chk">
+                                        <input type="checkbox" id="mail_lst14">
+                                        <label for="mail_lst14">&nbsp;</label>
+                                    </div>
+                                    
+                                    <div class="mail_info">
+                                        <span><a href="#none">Bruno</a></span>
+                                        <em><a href="#none">Dear Employee, As per the regulations all em regulations all em</a></em>
+                                    </div>
+                                    
+                                    <div class="mail_starred">
+                                        <a href="#none">
+                                            <span class="far fa-star"></span>
+                                            <span class="fas fa-star"></span>
+                                        </a>  
+                                    </div>              
+                                </li>
+                                
+                                <li>
+                                    <div class="mail_chk">
+                                        <input type="checkbox" id="mail_lst14">
+                                        <label for="mail_lst14">&nbsp;</label>
+                                    </div>
+                                    
+                                    <div class="mail_info">
+                                        <span><a href="#none">Bruno</a></span>
+                                        <em><a href="#none">Dear Employee, As per the regulations all em regulations all em</a></em>
+                                    </div>
+                                    
+                                    <div class="mail_starred">
+                                        <a href="#none">
+                                            <span class="far fa-star"></span>
+                                            <span class="fas fa-star"></span>
+                                        </a>  
+                                    </div>              
+                                </li>
+                                
+                                <li>
+                                    <div class="mail_chk">
+                                        <input type="checkbox" id="mail_lst14">
+                                        <label for="mail_lst14">&nbsp;</label>
+                                    </div>
+                                    
+                                    <div class="mail_info">
+                                        <span><a href="#none">Bruno</a></span>
+                                        <em><a href="#none">Dear Employee, As per the regulations all em regulations all em</a></em>
+                                    </div>
+                                    
+                                    <div class="mail_starred">
+                                        <a href="#none">
+                                            <span class="far fa-star"></span>
+                                            <span class="fas fa-star"></span>
+                                        </a>  
+                                    </div>              
+                                </li>                                    
+                            </ul>
+                        </div>
+                        <!-- //.lst_mail -->
+                    </div>
+                    <!-- //.stn_mail -->
+                    
+                    <!-- .stn_viewer -->
+                    <div class="stn_viewer stn">
+                        <!-- .btn_menu -->
+                        <div class="btn_menu">
+                            <div class="btn_group">
+                                <button type="button"><span class="fas fa-reply"></span>Reply</button>
+                                <button type="button"><span class="fas fa-reply-all"></span>Reply All</button>
+                                <button type="button"><span class="fas fa-share"></span>Forward</button>
+                            </div>
+                            
+                            <div class="btn_group">
+                                <button type="button"><span class="fas fa-paperclip"></span>Attach</button>
+                                <button type="button"><span class="fas fa-trash"></span>Delete</button>
+                            </div>
+                            
+                            <button type="button" class="close_btn"><span class="fas fa-times"></span></button>
+                        </div>
+                        <!-- //.btn_menu -->
+                        
+                        <!-- .view_box -->
+                        <div class="view_box scrollbar">
+                            <!-- .view_tlt -->
+                            <div class="view_tlt">
+                                <img src="resources/images/img_profile.png" alt="메일 수신자 프로필 사진">
+                                <em>Weekly Update - Week 19 (May 8, 2017 - May 14, 2017)</em>
+                                <span>Sarah Graves <a href="mailto:itsmesarah268@gmail.com">itsmesarah268@gmail.com</a></span>
+                                <button type="button" class="user_plus_btn"><span class="fas fa-user-plus"></span></button>
+                            </div>
+                            <!-- //.view_tlt -->
+                            
+                            <!-- .view_cont -->
+                            <div class="view_cont">
+                                <!-- .read_box -->
+                                <div class="read_box">
+                                    <!-- header -->
+                                    <table style="width:100%; height: 163px; padding:40px 0;">
+                                        <tbody>
+                                            <tr>
+                                                <td align="center">
+                                                    <img src="https://formspree.io/static/img/formspree-logo-mark.png" alt="로고" width="50px" style="margin-bottom:15px">
+                                                    <p style="font-weight:700">UPDATED PRIVACY POLICY</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table> 
+                                    
+                                    <!-- cont -->
+                                    <table style="width: 100%; text-align:left;">
+                                        <tbody>
+                                            <tr>
+                                                <td style="padding-bottom:20px">
+                                                    Hello there,
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding-bottom:20px; word-break: keep-all;">
+                                                    You’re receiving this email because we’ve updated our <a href="#none">Privacy Policy</a> to comply with the new California Consumer Privacy Act ("CCPA"), which applies to all users of Formspree. If you’re not sure if you ever signed up for Formspree, an agency may have signed up on your behalf. We’ve made these updates to ensure that our terms are easier to understand and to keep up with evolving data privacy standards. At Formspree, we’ve always cared deeply about your privacy and we want to provide you with clear and simple information about how we handle the personal data we collect.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding-bottom:20px; word-break: keep-all;">
+                                                    We've updated our privacy policy to provide additional transparency on our information practices to comply with the CCPA.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding-bottom:20px; word-break: keep-all;">
+                                                    There is no action required on your part, we just wanted to inform you. These changes are effective immediately and by continuing to use Formspree, you signal your acceptance of these new terms. If you have any questions, don’t hesitate to contact us.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding-bottom:20px">
+                                                    Thank you for using Formspree!
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    
+                                    <!-- footer -->
+                                    <table style="width: 100%; text-align:center">
+                                        <tbody style="color:#888;">
+                                            <tr>
+                                                <td style="padding:50px 0">
+                                                    <span style="display:block; font-weight:700">Why did I receive this?</span>
+                                                    You received this email because you confirmed an email with Formspree at this address.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding-bottom:40px">
+                                                    <a href="#none" target="_blank" title="facebook 새창으로 열기"><img src="https://d1ma8knj6twvg6.cloudfront.net/static/img/social/fb.png" alt="facebook"></a>
+                                                    <a href="#none" target="_blank" title="twitter 새창으로 열기"><img src="https://d1ma8knj6twvg6.cloudfront.net/static/img/social/twitter.png" alt="twitter"></a>
+                                                    <a href="#none" target="_blank" title="github 새창으로 열기"><img src="https://d1ma8knj6twvg6.cloudfront.net/static/img/social/github.png" alt="github"></a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- //.read_box -->
+                                
+                                <!-- .attfile_box -->
+                                <div class="attfile_box clearfix">
+                                    <div class="file_pdf">
+                                        <em class="fas fa-file-pdf"></em>
+                                        <em class="file_tlt">Seminar Reports.pdf</em>
+                                        <span class="file_size">678Kb</span>
+                                        <a href="#none">View</a>
+                                        <a href="#none">Download</a>
+                                    </div>
+                                    
+                                    <div class="file_img">
+                                        <em class="fas fa-file-image"></em>
+                                        <em class="file_tlt">Product Design.jpg</em>
+                                        <span class="file_size">1.96Mb</span>
+                                        <a href="#none">View</a>
+                                        <a href="#none">Download</a>
+                                    </div>
+                                </div>
+                                <!-- //.attfile_box -->
+                            </div>
+                            <!-- //.view_cont -->
+                        </div>
+                        <!-- //.view_box -->
+                    </div>
+                    <!-- //.stn_viewer -->
+                </div>
+                <!-- //.stn_wrap -->
+            </div>
+            <!-- //#contents -->
+        </div>
+        <!-- //#container -->
+    </div>
+    <!-- //.#wrap -->
+</body>
+</html>
