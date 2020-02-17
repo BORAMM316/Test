@@ -1,0 +1,6 @@
+@charset "UTF-8";
+/* MINDsLab. NBR. 20191230 */
+
+/* -------------------- header -------------------- */
+#header .header_box> div, #header .header_box> h1 {color: #000}
+#header .unb .basket .mark {color: #fff; font-size: 12px; background-color: #8c68a2;}
