@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/* MINDsLab. NBR. 20200117 */
+
+/* -------------------- contents -------------------- */
+/* total_count */
+.total_count > div {width: 60%;}
+
+/* customer_count */
+.total_count .customer_count {height: 70px; margin: 30px 0 0 0;}
+.total_count .customer_count > dl {float: left; width: 25%; height: 100%; font-weight: 500;}
+.total_count .customer_count .business {border-top-left-radius: 5px; border-bottom-left-radius: 5px; background: #31375a; color: #fff;}
+.total_count .customer_count > dl dt {margin: 10px 0 5px 0;}
+.total_count .customer_count > dl dd {font-size: 20px; text-decoration: underline;}
+.total_count .customer_count > dl dd a {color: #fff; font-weight: 700;}
+.total_count .customer_count .ex_customer a {color: #ff8e20;}
+.total_count .customer_count .in_customer a {color: #23bbc4;}
+.total_count .customer_count .etc a {color: #ff5182;}

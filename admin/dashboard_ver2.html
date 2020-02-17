@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    
+    <link rel="stylesheet" href="resources/css/reset.css">
+    <link rel="stylesheet" href="resources/css/font.css">
+    <link rel="stylesheet" href="resources/css/common.css">
+    <link rel="stylesheet" href="resources/css/dashboard_ver2.css">
+    
+    <script type="text/javascript" src="resources/script/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="resources/script/common.js"></script>
+    
+    <title>ADMIN &gt; DASHBOARD VER_2</title>
+</head>
+<body>
+    <!-- #wrap -->
+    <div id="wrap">
+        <!-- #header -->
+        <div id="header">
+            <!-- .sta -->
+            <div class="sta">
+                <h1>
+                    <a href="#none">ADMIN</a>
+                </h1>
+                
+                <!-- .gnb -->
+                <div class="gnb">
+                    <div class="location">
+                        <a href="#none"><span class="fas fa-home"></span></a>&nbsp;&nbsp;
+                        &gt;&nbsp;&nbsp;<a href="dashboard_ver2.html">DASHBOARD</a>
+                    </div>
+                    
+                    <div class="account_box">
+                        <a href="#none" class="my_account">
+                            <span class="far fa-user"></span>&nbsp;&nbsp;admin@console.com
+                            <img src="resources/images/img_arrow_down.png" alt="하향화살표">
+                        </a>
+                    </div>
+                </div>
+                <!-- //.gnb -->
+            </div>
+            <!-- //.sta -->
+        </div>
+        <!-- //#header -->
+        
+        <!-- #container -->
+        <div id="container">
+            <!-- .snb -->
+            <ul class="snb">
+                <li><a href="#none"><span class="fas fa-chart-line"></span>&nbsp;&nbsp;DASHBOARD</a>
+                    <ul class="sub_lst">
+                        <li><a href="#none">유료 회원</a></li>
+                        <li><a href="#none">API 발급 회원</a></li>
+                        <li><a href="#none">해지 회원</a></li>
+                        <li><a href="#none">전체 회원</a></li>
+                    </ul>
+                </li>
+                <li><a href="#none"><span class="fas fa-user-friends"></span>&nbsp;&nbsp;회원관리</a>
+                    <ul class="sub_lst">
+                        <li><a href="#none">유료 회원</a></li>
+                        <li><a href="#none">API 발급 회원</a></li>
+                        <li><a href="#none">해지 회원</a></li>
+                        <li><a href="#none">전체 회원</a></li>
+                    </ul>
+                </li>
+                <li><a href="#none"><span class="far fa-credit-card">&nbsp;&nbsp;결제내역</span></a>
+                    <ul class="sub_lst">
+                        <li><a href="#none">유료 회원</a></li>
+                        <li><a href="#none">API 발급 회원</a></li>
+                        <li><a href="#none">해지 회원</a></li>
+                        <li><a href="#none">전체 회원</a></li>
+                    </ul>
+                </li>
+                <li><a href="#none"><span class="fas fa-users-cog">&nbsp;&nbsp;권한관리</span></a>
+                    <ul class="sub_lst">
+                        <li><a href="#none">유료 회원</a></li>
+                        <li><a href="#none">API 발급 회원</a></li>
+                        <li><a href="#none">해지 회원</a></li>
+                        <li><a href="#none">전체 회원</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- //.snb -->
+            
+            <!-- #contents -->
+            <div id="contents">
+                <!-- .total_count -->
+                <div class="total_count clearfix">  
+                    <h3>
+                        <span class="fas fa-chevron-right"></span>&nbsp;&nbsp;maum.ai 회원조회
+                    </h3>                  
+                    <!-- .payment_count -->
+                    <div class="payment_count">
+                        <dl>
+                            <dt>오늘 결제 건수: <span>2</span></dt>
+                            <dd><span>198,000</span>&lpar;원&rpar;</dd>
+                        </dl>
+                        <dl>
+                            <dt>월 매출액: <span>161</span></dt>
+                            <dd><span>15,967,000</span>&lpar;원&rpar;</dd>
+                        </dl>
+                        <dl>
+                            <dt>누적 매출액: <span>433</span></dt>
+                            <dd><span>45,967,000</span>&lpar;원&rpar;</dd>
+                        </dl>
+                    </div>
+                    <!-- //.payment_count -->
+                </div>
+                <!-- //.total_count -->
+                
+                <!-- .payment_lst -->
+                <div class="payment_lst lst_box">
+                    <h3>
+                        <em>오늘 <span>&lpar;11&sol;22&rpar;</span> 결제 내역</em>
+                        <span>11&sol;22 12&colon;00기준</span>
+                    </h3>
+                    <table>
+                        <caption class="hide">오늘 결제 내역</caption>
+                        
+                        <thead>
+                            <tr>
+                                <th>No.</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Company</th>
+                                <th>Payment</th>
+                                <th>상품명</th>
+                                <th>결제금액</th>
+                                <th>통화구분</th>
+                                <th>승인절차</th>
+                                <th>취소일자</th>
+                                <th>거래상태</th>
+                                <th>회차</th>
+                            </tr>
+                        </thead>
+                        
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>홍길동</td>
+                                <td>Test001@mindslab.ai</td>
+                                <td>323-2244-2222</td>
+                                <td>마인즈랩</td>
+                                <td>business</td>
+                                <td>TTS</td>
+                                <td>300,000</td>
+                                <td>card</td>
+                                <td>2019.09.11</td>
+                                <td>2019.09.11</td>
+                                <td>2019-11-06</td>
+                                <td>잠김</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>홍길동</td>
+                                <td>Test001@mindslab.ai</td>
+                                <td>323-2244-2222</td>
+                                <td>마인즈랩</td>
+                                <td>business</td>
+                                <td>TTS</td>
+                                <td>300,000</td>
+                                <td>card</td>
+                                <td>2019.09.11</td>
+                                <td>2019.09.11</td>
+                                <td>2019-11-06</td>
+                                <td>잠김</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>홍길동</td>
+                                <td>Test001@mindslab.ai</td>
+                                <td>323-2244-2222</td>
+                                <td>마인즈랩</td>
+                                <td>business</td>
+                                <td>TTS</td>
+                                <td>300,000</td>
+                                <td>card</td>
+                                <td>2019.09.11</td>
+                                <td>2019.09.11</td>
+                                <td>2019-11-06</td>
+                                <td>잠김</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>홍길동</td>
+                                <td>Test001@mindslab.ai</td>
+                                <td>323-2244-2222</td>
+                                <td>마인즈랩</td>
+                                <td>business</td>
+                                <td>TTS</td>
+                                <td>300,000</td>
+                                <td>card</td>
+                                <td>2019.09.11</td>
+                                <td>2019.09.11</td>
+                                <td>2019-11-06</td>
+                                <td>잠김</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>홍길동</td>
+                                <td>Test001@mindslab.ai</td>
+                                <td>323-2244-2222</td>
+                                <td>마인즈랩</td>
+                                <td>business</td>
+                                <td>TTS</td>
+                                <td>300,000</td>
+                                <td>card</td>
+                                <td>2019.09.11</td>
+                                <td>2019.09.11</td>
+                                <td>2019-11-06</td>
+                                <td>잠김</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- //.payment_lst -->
+                
+                <!-- .user_count -->
+                <div class="user_count lst_box">
+                    <h3>
+                        <em>최근 15일 사용자 수</em>
+                        <span>11&sol;22 12&colon;00기준</span>
+                    </h3>
+                    
+                    <table>
+                        <caption class="hide">최근 15일 사용자 수</caption>
+                        
+                        <colgroup>
+                            <col width="44px">
+                        </colgroup>
+                        
+                        <thead>
+                            <tr>
+                                <th>&nbsp;</th>                                 
+                                <th>11&sol;22</th>                                
+                                <th>11&sol;22</th>                                
+                                <th>11&sol;22</th>                                
+                                <th>11&sol;22</th>                                
+                                <th>11&sol;22</th>                                
+                                <th>11&sol;22</th>                                
+                                <th>11&sol;22</th>                                
+                                <th>11&sol;22</th>                                
+                                <th>11&sol;22</th>                                
+                                <th>11&sol;22</th>                                
+                                <th>11&sol;22</th>                                
+                                <th>11&sol;22</th>                                
+                                <th>11&sol;22</th>                                
+                                <th>11&sol;22</th>                                
+                                <th>11&sol;22</th>                                
+                            </tr>
+                        </thead>
+                        
+                        <tbody>
+                            <tr class="mau_count">
+                                <td>MAU</td>
+                                <td>197</td>
+                                <td>197</td>
+                                <td>197</td>
+                                <td>197</td>
+                                <td>197</td>
+                                <td>197</td>
+                                <td>197</td>
+                                <td>197</td>
+                                <td>197</td>
+                                <td>197</td>
+                                <td>197</td>
+                                <td>197</td>
+                                <td>197</td>
+                                <td>197</td>
+                                <td>197</td>
+                            </tr>
+                            <tr>
+                                <td>증감</td>
+                                <td>
+                                    <img src="resources/images/img_arrow_down_pink.png" alt="증감화살표">
+                                    <span>1</span>
+                                </td>
+                                <td>
+                                    <img src="resources/images/img_arrow_up.png" alt="증감화살표">
+                                    <span>2</span>
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- //.user_count -->
+            </div>
+            <!-- //#contetns -->
+        </div>
+        <!-- //#container -->
+        
+        <!-- #footer -->
+        <div id="footer">
+            <p>&copy; MINDsLab. All rights reserved.</p>
+        </div>
+        <!-- //#footer -->
+    </div>
+    <!-- //#wrap -->
+</body>
+</html>
