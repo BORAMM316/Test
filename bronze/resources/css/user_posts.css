@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+#wrap{width: 100%;}
+
+/* -------------------- stn_gnb -------------------- */
+.stn_gnb{position: absolute; top: 0; width: 100%; height: 60px; z-index: 5;}
+.stn_gnb .gnb_box{position: relative;}
+.stn_gnb .gnb_box .back_arrow{position: absolute; left: 0; padding: 16px 20px; z-index: 5;}
+.stn_gnb .gnb_box .back_arrow>img{width: 10px;}
+
+.stn_gnb .gnb_box .ham_menu{position: absolute; right: 0; width: 50px; height: 50px;}
+.stn_gnb .gnb_box .ham_menu img{width: 16px;}
+
+/* -------------------- stn_user_profile -------------------- */
+.stn_user_profile .profile_box{position: relative; width: 100%;}
+.stn_user_profile .profile_box .user_info{position: absolute; bottom: 0; width: calc(100% - 40px); height: 75px; padding: 0 20px;}
+.stn_user_profile .profile_box .user_info>p{color: #fff;}
+.stn_user_profile .profile_box .user_info .name{margin: 10px 0; font-size: 20px; font-weight: 500;}
+.stn_user_profile .profile_box .user_info .region{}
+
+.stn_user_profile .profile_box .plus_btn_wrap{position: absolute; right: 0; bottom: 0; width: 75px; height: 75px;}
+.stn_user_profile .profile_box .plus_btn{position: relative; left: 10px; top: 15px; width: 45px; height: 45px; background: #b0a478; border-radius: 100px;}
+.stn_user_profile .profile_box .plus_btn:before{content: ''; display: block; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 3px; height: 15px; background: #fff;}
+.stn_user_profile .profile_box .plus_btn:after{content: ''; display: block; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 15px; height: 3px; background: #fff;}
+
+/* -------------------- stn_lnb -------------------- */
+.stn_lnb{width: 100%; height: 55px; }
+.stn_lnb .lnb_box{display: flex; width: 100%; height: 100%;}
+.stn_lnb .lnb_box>li{flex: 3; font-weight: 600; text-align: center; line-height: 55px;}
+.stn_lnb .lnb_box>li>a{display: block; position: relative; color: #9e9c96;}
+.stn_lnb .lnb_box>li.active>a:after{content: ''; display: block; position: absolute; bottom: 0; width: 70%; height: 3px; margin: 0 15%; background: #b0a478;}
+.stn_lnb .lnb_box>li.active>a{color: #333;}
+
+/* -------------------- stn_posts -------------------- */
+.stn_posts{width: 100%;}
+.stn_posts .post_box{position: relative; width: calc(100% - 16px); padding: 8px 8px 0 8px;}
+.stn_posts .post_box:before{content: ''; display: block; position: absolute; top: 0; left: 0; width: 100%; height: 1px; background: #edece8;}
+
+.stn_posts .post_box .post_profile{position: relative; width: calc(100% - 24px); height: 48px; padding: 12px;}
+.stn_posts .post_box .post_profile .profile_thumb{float: left; margin-right: 15px;}
+.stn_posts .post_box .post_profile .profile_thumb img{width: 48px;}
+.stn_posts .post_box .post_profile .profile_name{margin-top: 5px; color: #333; font-weight: 600;}
+.stn_posts .post_box .post_profile .posting_time{color: #9e9c96; font-size: 11px;}
+.stn_posts .post_box .post_profile .more_btn{position: absolute; top: 25px; right: 12px;}
+
+
+.stn_posts .post_box .post_txt{width: calc(100% - 24px); padding: 0 12px 12px 12px; color: #333; font-weight: 600;}
+
+.stn_posts .post_box .post_video{position: relative;}
+.stn_posts .post_box .post_video video{width: 100%;}
+.stn_posts .post_box .post_video .play_btn{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+
+.stn_posts .post_box .post_etc{display: flex; position: relative; width: calc(100% - 24px); padding: 17px 12px;}
+.stn_posts .post_box .post_etc>p{color: #9e9c96; font-size: 11px; line-height: 12px; }
+.stn_posts .post_box .post_etc .cmt_count{position: absolute; left: 80px;}
+.stn_posts .post_box .post_etc .like_btn{position: absolute; right: 48px;}
+.stn_posts .post_box .post_etc .cmt_btn{position: absolute; right: 12px;}
+
+.stn_posts .post_box .post_etc .liked_btn{position: absolute; right: 48px;}

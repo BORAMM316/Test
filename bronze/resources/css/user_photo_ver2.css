@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+#wrap{width: 100%;}
+
+/* -------------------- stn_gnb -------------------- */
+.stn_gnb{position: absolute; top: 0; width: 100%; height: 60px; z-index: 5;}
+.stn_gnb .gnb_box{position: relative;}
+.stn_gnb .gnb_box .back_arrow{position: absolute; left: 0; padding: 16px 20px; z-index: 5;}
+.stn_gnb .gnb_box .back_arrow>img{width: 10px;}
+
+.stn_gnb .gnb_box .ham_menu{position: absolute; right: 0; width: 50px; height: 50px;}
+.stn_gnb .gnb_box .ham_menu img{width: 16px;}
+
+/* -------------------- stn_user_profile -------------------- */
+.stn_user_profile .profile_box{width: 100%;}
+.stn_user_profile .profile_box .info_box{position: relative; width: 100%; height: 125px;}
+.stn_user_profile .profile_box .info_box img{position: absolute; top: -47px; left: 50%; transform: translate(-50%); width: 95px; border: 2px solid #fff; border-radius: 100px;}
+
+.stn_user_profile .profile_box .user_info{position: absolute; top: 65px; left: 50%; transform: translate(-50%);}
+.stn_user_profile .profile_box .user_info>p{text-align: center; line-height: 25px;}
+.stn_user_profile .profile_box .user_info .name{color: #333; font-size: 20px; font-weight: 600;}
+.stn_user_profile .profile_box .user_info .region{}
+
+/* -------------------- stn_lnb -------------------- */
+.stn_lnb{width: 100%; height: 55px; border-top: 1px solid #edece8; border-bottom: 1px solid #edece8;}
+.stn_lnb .lnb_box{display: flex; width: 100%; height: 100%;}
+.stn_lnb .lnb_box>li{flex: 3; font-weight: 600; text-align: center; line-height: 55px;}
+.stn_lnb .lnb_box>li>a{display: block; position: relative; color: #9e9c96;}
+.stn_lnb .lnb_box>li.active>a:after{content: ''; display: block; position: absolute; bottom: 0; width: 70%; height: 3px; margin: 0 15%; background: #b0a478;}
+.stn_lnb .lnb_box>li.active>a{color: #333;}
+
+/* -------------------- stn_photo -------------------- */
+.stn_photo{padding: 1px;}
+.stn_photo>li{float: left; width: calc(33.33% - 2px); padding: 1px;}

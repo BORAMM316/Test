@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+#wrap{width: 100%;}
+
+/* -------------------- stn_gnb -------------------- */
+.stn_gnb{position: absolute; top: 0; width: 100%; height: 60px; z-index: 5;}
+.stn_gnb .gnb_box{position: relative;}
+.stn_gnb .gnb_box .back_arrow{position: absolute; left: 0; padding: 16px 20px; z-index: 5;}
+.stn_gnb .gnb_box .back_arrow>img{width: 10px;}
+
+.stn_gnb .gnb_box .ham_menu{position: absolute; right: 0; width: 50px; height: 50px;}
+.stn_gnb .gnb_box .ham_menu img{width: 16px;}
+
+/* -------------------- stn_user_profile -------------------- */
+.stn_user_profile .profile_box{width: 100%;}
+.stn_user_profile .profile_box .info_box{position: relative; width: calc(100% - 40px); height: 75px; padding: 0 20px;}
+.stn_user_profile .profile_box .user_info{padding: 12px 0;}
+.stn_user_profile .profile_box .user_info>p{line-height: 25px;}
+.stn_user_profile .profile_box .user_info .name{color: #333; font-size: 20px; font-weight: 600;}
+.stn_user_profile .profile_box .user_info .region{}
+
+.stn_user_profile .profile_box .plus_btn_wrap{position: absolute; top: 0; right: 0; width: 75px; height: 75px;}
+.stn_user_profile .profile_box .plus_btn{position: relative; left: 10px; top: 15px; width: 45px; height: 45px; background: #b0a478; border-radius: 100px;}
+.stn_user_profile .profile_box .plus_btn:before{content: ''; display: block; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 3px; height: 15px; background: #fff;}
+.stn_user_profile .profile_box .plus_btn:after{content: ''; display: block; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 15px; height: 3px; background: #fff;}
+
+/* -------------------- stn_lnb -------------------- */
+.stn_lnb{width: 100%; height: 55px; border-top: 1px solid #edece8; border-bottom: 1px solid #edece8;}
+.stn_lnb .lnb_box{display: flex; width: 100%; height: 100%;}
+.stn_lnb .lnb_box>li{flex: 3; font-weight: 600; text-align: center; line-height: 55px;}
+.stn_lnb .lnb_box>li>a{display: block; position: relative; color: #9e9c96;}
+.stn_lnb .lnb_box>li.active>a:after{content: ''; display: block; position: absolute; bottom: 0; width: 70%; height: 3px; margin: 0 15%; background: #b0a478;}
+.stn_lnb .lnb_box>li.active>a{color: #333;}
+
+/* -------------------- stn_photo -------------------- */
+.stn_photo{padding: 1px;}
+.stn_photo>li{float: left; width: calc(33.33% - 2px); padding: 1px;}
