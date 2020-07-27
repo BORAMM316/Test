@@ -34,17 +34,11 @@
         
         <!-- #contents -->
         <div id="contents">
-            <h2>Philosophy</h2>
-            div.stn_
-            <div class="txt_box">
-                <h5>아시안 뷰티는 온전히 자연에서 비롯됩니다.</h5>
-                <p>자연이 간직한 섭리에서 아름다움의 참된 이치를 배우고 자연이 키워낸 생명력에서 몸과 마음, 내면과 외면, 그 어느 것 하나 소홀함 없는 아름다움을 선사합니다. 자연과 사람, 아름다움과 건강, 몸과 마음은 본디 하나이기에 아모레퍼시픽은 자연이야말로 사람에게 가장 이로운 것이라 생각했습니다.</p>
-                <p>자연이 간직한 섭리에서 아름다움의 참된 이치를 배우고 자연이 키워낸 생명력에서 몸과 마음, 내면과 외면, 그 어느 것 하나 소홀함 없는 아름다움을 선사합니다. 자연과 사람, 아름다움과 건강, 몸과 마음은 본디 하나이기에 아모레퍼시픽은 자연이야말로 사람에게 가장 이로운 것이라 생각했습니다.</p>
-            </div>
-            
-            <div class="img_box">
-                <img src="resources/images/img_philosophy_01.jpg" alt="">
-            </div>
+            <div class="img_area">
+                <div class="img_box">
+                    <img src="resources/images/img_philosophy_01.jpg" alt="">
+                </div> 
+            </div>       
         </div>
         <!-- //#contents -->
     </div>
@@ -53,16 +47,23 @@
     <!-- script -->
     <script type="text/javascript" src="resources/js/jquery-2.2.0.min.js"></script>
     <script>
-        // 스크롤 높이 기준에 따라 헤더영역 변화
         $(window).scroll(function(){
-            var scroll = $(window).scrollTop();
-            
-            if(scroll >= 60){
-                $('#header').addClass('small')
+            // 스크롤 높이 기준에 따라 헤더영역 변화
+            if($(this).scrollTop() >= 60){
+                $('#header').addClass('small');
             }else{
-                $('#header').removeClass('small')
+                $('#header').removeClass('small');
             }
+            
+            // 시간차 스크롤 효과
+            var contScroll = $(this).scrollTop();
+            var imgScroll = contScroll * -0.1;          
+
+            console.log(contScroll);
+            console.log(imgScroll);
+            $('#contents').css('transform', 'matrix(1, 0, 0, 1, 0, '+ contScroll +')');
+            $('.img_box img').css('transform', 'matrix(1.08584, 0, 0, 1.08584, 0, '+ imgScroll +')');
         });
-    </script>   
+    </script>
 </body>
 </html>
